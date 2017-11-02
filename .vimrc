@@ -46,6 +46,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Townk/vim-autoclose'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'cakebaker/scss-syntax.vim'
 
 
 " " All of your Plugins must be added before the following line
