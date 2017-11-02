@@ -1,29 +1,31 @@
-source ~/.profile
+#sh ~/.profile
 
 
 sudo apt-get update
-sudo apt-get install build-essential cmake3
-sudo apt-get install python-dev python3-dev
-sudo apt-get install exuberant-ctags
-sudo apt-get install mono-complete
-sudo apt-get install build-essential libssl-dev
+sudo apt-get install -y cmake
+sudo apt-get install -y build-essential cmake3
+sudo apt-get install -y python-dev python3-dev
+sudo apt-get install -y exuberant-ctags
+sudo apt-get install -y mono-complete
+sudo apt-get install -y build-essential libssl-dev
+sudo apt-get install -y vim-nox-py2
+sudo apt-get install -y golang
 
 cd
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
-bash install_nvm.sh
+#curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+#sh install_nvm.sh
 
-source ~/.profile
+sh ~/.profile
 
-nvm install 8.9.0
-nvm use 8.9.0
+#~/.nvm/nvm.sh install 8.9.0
+#~/.nvm/nvm.sh use 8.9.0
+#sh ~/.profile
 
-curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
-
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-
+curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -36,7 +38,7 @@ git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javas
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/bundle/nerdtree-git-plugin
 
-git clone https://github.com/tpope/vim-sensible.git
+git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
 
@@ -47,7 +49,7 @@ vim -u NONE -c "helptags vim-rails/doc" -c q
 git clone https://github.com/StanAngeloff/php.vim.git ~/.vim/bundle/php.vim
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 git clone git://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
-
+vim +PluginInstall +qall
 
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all

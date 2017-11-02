@@ -47,6 +47,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Townk/vim-autoclose'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'chrisbra/csv.vim'
+Plugin 'jreybert/vimagit'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'edkolev/promptline.vim'
 
 
 " " All of your Plugins must be added before the following line
