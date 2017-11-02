@@ -1,4 +1,4 @@
-sh ~/.profile
+#sh ~/.profile
 
 
 sudo apt-get update
@@ -12,14 +12,14 @@ sudo apt-get install -y vim-nox-py2
 sudo apt-get install -y golang
 
 cd
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
-sh install_nvm.sh
+#curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+#sh install_nvm.sh
 
 sh ~/.profile
 
-~/.nvm/nvm.sh install 8.9.0
-~/.nvm/nvm.sh use 8.9.0
-sh ~/.profile
+#~/.nvm/nvm.sh install 8.9.0
+#~/.nvm/nvm.sh use 8.9.0
+#sh ~/.profile
 
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
